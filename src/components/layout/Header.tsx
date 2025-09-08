@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ mainRef }) => {
   return (
     <header
       className={`fixed top-0 left-0 w-full flex items-center justify-between px-8 py-4 z-50 transition-colors duration-200 ${
-        lightMode ? "bg-white text-black shadow-md" : "bg-black text-white"
+        lightMode ? "bg-white text-black shadow-md" : "text-white"
       }`}
     >
       <span className="text-xl font-bold">HANARAE'S PORTFOLIO</span>
