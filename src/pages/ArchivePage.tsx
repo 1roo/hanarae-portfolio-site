@@ -8,7 +8,7 @@ export default function ArchivePage() {
       <div className="border border-gray-100 w-44" />
       <div className="mb-10 mt-1 border border-gray-100 w-44 h-2 bg-gray-100" />
       <div className="flex gap-20 mt-10">
-        <div className="rounded-xl bg-white p-3 w-[300px]">
+        <div className="rounded-xl bg-white p-3 w-[300px] cursor-pointer">
           <img
             className="mb-5"
             src="/assets/images/github.png"
@@ -20,7 +20,7 @@ export default function ArchivePage() {
             github.com/1roo
           </a>
         </div>
-        <div className="rounded-xl bg-white p-3  w-[300px]">
+        <div className="rounded-xl bg-white p-3  w-[300px] cursor-pointer">
           <img
             className="mb-5"
             src="/assets/images/notion.png"
