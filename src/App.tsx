@@ -2,6 +2,7 @@ import Header from "./components/layout/Header"
 import MainPage from "./pages/MainPage"
 import AboutMePage from "./pages/AboutMePage"
 import SkillsPage from "./pages/SkillsPage"
+import ArchivePage from "./pages/ArchivePage"
 import ProjectsPage from "./pages/ProjectsPage"
 import CareerPage from "./pages/CareerPage"
 import Footer from "./components/layout/Footer"
@@ -17,6 +18,7 @@ function App() {
         <MainPage mainRef={mainRef} />
         <AboutMePage />
         <SkillsPage />
+        <ArchivePage />
         <ProjectsPage />
         <CareerPage />
       </main>

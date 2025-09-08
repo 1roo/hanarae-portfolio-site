@@ -45,6 +45,9 @@ const Header: React.FC<HeaderProps> = ({ mainRef }) => {
         <a href="#skills" className="hover:opacity-70">
           SKILLS
         </a>
+        <a href="#archive" className="hover:opacity-70">
+          ARCHIVE
+        </a>
         <a href="#projects" className="hover:opacity-70">
           PROJECTS
         </a>
