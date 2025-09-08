@@ -15,7 +15,7 @@ export default function MainPage({ mainRef }: MainPageProps) {
         <h1 className="mb-2">하나래</h1>
         <h1>프론트엔드 개발자 포트폴리오</h1>
       </div>
-      <div className="z-10 -mb-36 mt-5 text-xl text-white/80 flex flex-col items-center justify-end">
+      <div className="z-10 -mb-28 mt-5 text-xl text-white/80 flex flex-col items-center justify-end">
         <p>안녕하세요.</p>
         <p>사용자 경험을 가장 중시하는 개발자</p>
         <p>
