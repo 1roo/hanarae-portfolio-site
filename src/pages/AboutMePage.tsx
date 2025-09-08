@@ -7,9 +7,9 @@ export default function AboutMePage() {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center bg-[#EEEEEE] pb-7"
+      className="flex flex-col items-center justify-center bg-[#EEEEEE] p-16 text-lg"
     >
-      <h2 className="text-3xl font-semibold mt-10">ABOUT ME</h2>
+      <h2 className="text-3xl font-semibold">ABOUT ME</h2>
       <div className="border border-black w-44" />
       <div className="mb-10 mt-1 border border-black w-44 h-2 bg-black" />
       <div className="my-10 grid grid-cols-3 gap-x-12 gap-y-20">
