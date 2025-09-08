@@ -1,17 +1,20 @@
-import Footer from "./components/layout/Footer"
 import Header from "./components/layout/Header"
-import AboutMePage from "./pages/AboutMePage"
-import CareerPage from "./pages/CareerPage"
 import MainPage from "./pages/MainPage"
-import ProjectsPage from "./pages/ProjectsPage"
+import AboutMePage from "./pages/AboutMePage"
 import SkillsPage from "./pages/SkillsPage"
+import ProjectsPage from "./pages/ProjectsPage"
+import CareerPage from "./pages/CareerPage"
+import Footer from "./components/layout/Footer"
+import { useRef } from "react"
 
 function App() {
+  const mainRef = useRef<HTMLElement | null>(null)
+
   return (
     <>
-      <Header />
+      <Header mainRef={mainRef} />
       <main>
-        <MainPage />
+        <MainPage mainRef={mainRef} />
         <AboutMePage />
         <SkillsPage />
         <ProjectsPage />
