@@ -6,6 +6,7 @@ import ArchivePage from "./pages/ArchivePage"
 import ProjectsPage from "./pages/ProjectsPage"
 import CareerPage from "./pages/CareerPage"
 import Footer from "./components/layout/Footer"
+import ScrollToTopButton from "./components/ScrollToTopButton"
 import { useRef } from "react"
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <CareerPage />
       </main>
       <Footer />
+      <ScrollToTopButton />
     </>
   )
 }
