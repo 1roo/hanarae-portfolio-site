@@ -42,7 +42,7 @@ export default function Modal({ isOpen, onClose, images }: ModalProps) {
       <div
         className="
           relative bg-white rounded-xl shadow-xl p-6 
-          w-[70%] max-w-4xl h-[70vh] flex flex-col
+          w-[70%] max-w-4xl aspect-[5/4]
         "
       >
         <button
