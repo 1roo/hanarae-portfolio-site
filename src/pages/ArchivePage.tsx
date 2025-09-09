@@ -22,8 +22,8 @@ export default function ArchivePage() {
             alt="github 로고"
             width={150}
           />
-          <span className="mr-3 font-bold">소스코드 저장소</span>
-          <p className="text-blue-400">github.com/1roo</p>
+          <span className="mr-3 font-bold can-select">소스코드 저장소</span>
+          <p className="text-blue-400 can-select">github.com/1roo</p>
         </a>
 
         {/* Notion 카드 */}
@@ -39,7 +39,9 @@ export default function ArchivePage() {
             alt="notion 로고"
             width={150}
           />
-          <span className="mr-3 font-bold">공부 및 지식 기록 블로그</span>
+          <span className="mr-3 font-bold can-select">
+            공부 및 지식 기록 블로그
+          </span>
         </a>
       </div>
     </section>

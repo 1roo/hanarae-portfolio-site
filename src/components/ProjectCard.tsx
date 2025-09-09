@@ -79,7 +79,7 @@ export default function ProjectCard({
                 className="flex items-center border border-black rounded-lg px-3 py-2 font-bold cursor-pointer hover:bg-gray-100"
               >
                 {link.icon}
-                <span className="ml-2">{link.label}</span>
+                <span className="ml-2 can-select">{link.label}</span>
               </button>
             ) : (
               <a
@@ -90,7 +90,7 @@ export default function ProjectCard({
                 className="flex items-center border border-black rounded-lg px-3 py-2 font-bold cursor-pointer hover:bg-gray-100"
               >
                 {link.icon}
-                <span className="ml-2">{link.label}</span>
+                <span className="ml-2 can-select">{link.label}</span>
               </a>
             )
           )}
