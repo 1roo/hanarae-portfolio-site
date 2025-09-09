@@ -8,7 +8,8 @@ interface ProjectRole {
 interface ProjectLink {
   icon: ReactNode
   label: string
-  href: string
+  href?: string
+  onClick?: () => void
 }
 
 interface ProjectCardProps {
@@ -70,18 +71,29 @@ export default function ProjectCard({
 
       {links.length > 0 && (
         <div className="flex gap-4 mt-4 flex-wrap">
-          {links.map((link, i) => (
-            <a
-              key={i}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center border border-black rounded-lg px-3 py-2 font-bold cursor-pointer hover:bg-gray-100"
-            >
-              {link.icon}
-              <span className="ml-2">{link.label}</span>
-            </a>
-          ))}
+          {links.map((link, i) =>
+            link.onClick ? (
+              <button
+                key={i}
+                onClick={link.onClick}
+                className="flex items-center border border-black rounded-lg px-3 py-2 font-bold cursor-pointer hover:bg-gray-100"
+              >
+                {link.icon}
+                <span className="ml-2">{link.label}</span>
+              </button>
+            ) : (
+              <a
+                key={i}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center border border-black rounded-lg px-3 py-2 font-bold cursor-pointer hover:bg-gray-100"
+              >
+                {link.icon}
+                <span className="ml-2">{link.label}</span>
+              </a>
+            )
+          )}
         </div>
       )}
     </div>
